@@ -7,7 +7,6 @@ namespace LaboratoryWork2
         internal int Count { get; set; } = 1;
 
         internal virtual BSTNodeBase<T> Parent { get; set; }
-
         internal virtual BSTNodeBase<T> Left { get; set; }
         internal virtual BSTNodeBase<T> Right { get; set; }
 
@@ -15,8 +14,5 @@ namespace LaboratoryWork2
 
         internal bool IsLeftChild => Parent.Left == this;
         internal bool IsRightChild => Parent.Right == this;
-
-        internal bool IsLeaf => Left == null && Right == null;
-
     }
 }

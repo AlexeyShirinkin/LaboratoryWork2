@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LaboratoryWork2
 {
@@ -23,9 +20,7 @@ namespace LaboratoryWork2
         public bool MoveNext()
         {
             if (root == null)
-            {
                 return false;
-            }
 
             if (current == null)
             {
@@ -48,13 +43,7 @@ namespace LaboratoryWork2
             current = root;
         }
 
-        public T Current
-        {
-            get
-            {
-                return current.Value;
-            }
-        }
+        public T Current => current.Value;
 
         object IEnumerator.Current => Current;
 
